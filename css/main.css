@@ -1,0 +1,134 @@
+@import url(normalize.css);
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+button:active, button:focus {
+  outline: none !important; }
+
+button::-moz-focus-inner {
+  border: 0 !important; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+textarea:focus,
+input:focus {
+  outline: none; }
+
+li {
+  list-style-type: none; }
+
+section {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 40px 0; }
+
+p {
+  margin: 0; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase; }
+
+.btn {
+  background: #f21241;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: #fff; }
+
+.main_head {
+  background: url(../img/bg_header.jpg) no-repeat center center;
+  background-size: cover; }
+
+.logo {
+  margin-top: 20px;
+  display: block;
+  background: url(../img/logo.png) no-repeat center center;
+  width: 70px;
+  height: 42px; }
+
+.header_nav li {
+  display: inline-block;
+  padding: 15px; }
+  .header_nav li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal; }
+
+.nav_button {
+  float: right;
+  margin-top: 23px; }
+
+.header_info h1 {
+  letter-spacing: 2.25px;
+  margin-top: 118px;
+  font-weight: 800;
+  font-size: 55px;
+  color: #fff;
+  text-transform: uppercase; }
+.header_info p {
+  margin-top: 10px;
+  line-height: 1.1;
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff; }
+
+.header_button {
+  font-size: 20px;
+  margin-top: 33px;
+  padding: 16px 38px;
+  letter-spacing: 0.8px; }
+
+/* Skills Child */
+.skills h2 {
+  margin: 40px 0 20px 0; }
+.skills_wrap {
+  text-align: center; }
+  .skills_wrap img {
+    margin-top: 20px;
+    text-align: center;
+    width: 109px;
+    height: 109px; }
+  .skills_wrap p {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase; }
+
+/* Slider */
+.slider h2 {
+  margin-top: 60px;
+  font-weight: 200; }
+
+.single_item {
+  background: url(../img/photo_slider.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 800px; }
+
+.single_item1 {
+  background: url(../img/bg_header.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 800px; }

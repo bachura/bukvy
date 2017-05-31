@@ -1,0 +1,136 @@
+@import "bourbon/bourbon"
+@import url(normalize.css)
+
+
+$main-color: #f21241
+$dark-color: #000
+$light-color: #fff
+
+//Убрать стрелки у формы телефона
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+// Для Firefox
+input
+	&[type='number']
+		-moz-appearance: textfield
+
+//Убрать свечение кнопок в браузере
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner 
+	border: 0 !important
+
+html
+	overflow-x: hidden
+
+body
+	padding: 0
+	margin: 0
+	font-family: "OpenSans", sans-serif
+	font-weight: normal
+	font-size: 14px
+	line-height: 1.4
+	overflow-x: hidden
+	-webkit-overflow-scrolling: touch /*Убирает скролл у ios*/
+textarea,
+input,
+	&:focus
+		outline: none
+li
+	list-style-type: none
+section
+	width: 100%
+	height: auto
+	display: block
+	padding: 40px 0
+p
+	margin: 0
+h1
+	margin: 0
+h2
+	margin: 0
+	font-size: 30px
+	color: $dark-color
+	text-align: center
+	text-transform: uppercase
+.btn
+	background: $main-color
+	border: none
+	border-radius: 5px
+	padding: 10px 25px
+	color: $light-color
+
+
+.main_head
+	background: url(../img/bg_header.jpg) no-repeat center center
+	background-size: cover
+.logo
+	// margin: 20px 0 0 55px
+	margin-top: 20px
+	display: block
+	background: url(../img/logo.png) no-repeat center center 
+	width: 70px
+	height: 42px
+.header_nav
+	li
+		display: inline-block
+		padding: 15px
+		a
+			color: $light-color
+			font-size: 16px
+			font-weight: normal
+.nav_button
+	float: right
+	margin-top: 23px
+.header_info
+	h1
+		letter-spacing: 2.25px
+		margin-top: 118px
+		font-weight: 800
+		font-size: 55px
+		color: $light-color
+		text-transform: uppercase
+	p
+		margin-top: 10px
+		line-height: 1.1
+		font-weight: normal
+		font-size: 40px
+		color: $light-color
+.header_button
+	font-size: 20px
+	margin-top: 33px
+	padding: 16px 38px
+	letter-spacing: 0.8px
+
+/* Skills Child */
+.skills
+	h2
+		margin: 40px 0 20px 0
+	&_wrap
+		text-align: center
+		img
+			margin-top: 20px
+			text-align: center
+			width: 109px
+			height: 109px
+		p
+			padding-top: 20px
+			margin-bottom: 20px
+			font-size: 16px
+			color: $dark-color
+			text-transform: uppercase
+
+/* Slider */
+.slider h2
+	margin-top: 60px
+	font-weight: 200
+.single_item
+	background: url(../img/photo_slider.jpg) no-repeat center center
+	background-size: cover
+	min-height: 800px
+.single_item1
+	background: url(../img/bg_header.jpg) no-repeat center center
+	background-size: cover
+	min-height: 800px	
+
