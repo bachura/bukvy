@@ -2,7 +2,7 @@
 @import url(normalize.css)
 
 
-$main-color: #f21241
+$main-color: #10a410
 $dark-color: #000
 $light-color: #fff
 
@@ -43,7 +43,7 @@ section
 	width: 100%
 	height: auto
 	display: block
-	padding: 40px 0
+	padding: 60px 0
 p
 	margin: 0
 h1
@@ -80,6 +80,8 @@ h2
 			color: $light-color
 			font-size: 16px
 			font-weight: normal
+		&:hover
+			color: $main-color
 .nav_button
 	float: right
 	margin-top: 23px
@@ -106,7 +108,7 @@ h2
 /* Skills Child */
 .skills
 	h2
-		margin: 40px 0 20px 0
+		margin: 20px 0 20px 0
 	&_wrap
 		text-align: center
 		img
@@ -121,16 +123,91 @@ h2
 			color: $dark-color
 			text-transform: uppercase
 
-/* Slider */
-.slider h2
-	margin-top: 60px
-	font-weight: 200
-.single_item
-	background: url(../img/photo_slider.jpg) no-repeat center center
-	background-size: cover
-	min-height: 800px
-.single_item1
-	background: url(../img/bg_header.jpg) no-repeat center center
-	background-size: cover
-	min-height: 800px	
+/* Slider */ 
+// .slider h2
+// 	margin-top: 60px
+// 	font-weight: 200
+// .single_item
+// 	background: url(../img/photo_slider.jpg) no-repeat center center
+// 	background-size: cover
+// 	min-height: 800px
+// .single_item1
+// 	background: url(../img/bg_header.jpg) no-repeat center center
+// 	background-size: cover
+// 	min-height: 800px
+
+/* Photo gallery */
+.photo_gallery
+	&_wrap
+		margin-top: 25px
+	&_overflow
+		overflow: hidden
+		padding: 0 8px
+
+/* Tabs */
+.tabs
+	background: #efefef
+	h2
+		padding: 20px 0 40px 0
+.tabs__content
+	display: none /* по умолчанию прячем все блоки */
+.tabs__content.active
+	display: block /* по умолчанию показываем нужный блок */
+.tabs__caption
+	padding-left: 0
+	text-align: center
+	margin-bottom: 55px
+	li
+		margin: 0 5px
+		padding: 20px 40px
+		background: #fff
+		border-radius: 5px
+		color: #626262
+		font-size: 16px
+		display: inline-block
+		cursor: pointer
+	.active
+		background: $main-color
+		color: #fff
+.tabs__content
+	&_wrap
+		padding: 0
+		max-width: 32%
+		margin: 0 5px
+		overflow: hidden
+		background: #fff
+		border-radius: 5px
+		img
+			overflow: hidden
+		h3
+			color: #626262
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 20px
+			margin: 20px
+			text-transform: uppercase
+		span
+			padding: 0
+			margin: 0 20px
+			display: block
+			color: $main-color
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 30px
+		a
+			font-size: 16px
+			color: #626262
+.tabs_btn
+	text-align: center
+	margin: 20px auto
+	button
+		margin-bottom: 20px
+		padding: 20px 125px
+		border: none
+		border-radius: 5px
+		background: $main-color
+		color: #fff
+		font-size: 20px
+		&:hover
+			background: $main-color * 0.9
+
+
 

@@ -36,7 +36,7 @@ section {
   width: 100%;
   height: auto;
   display: block;
-  padding: 40px 0; }
+  padding: 60px 0; }
 
 p {
   margin: 0; }
@@ -52,7 +52,7 @@ h2 {
   text-transform: uppercase; }
 
 .btn {
-  background: #f21241;
+  background: #10a410;
   border: none;
   border-radius: 5px;
   padding: 10px 25px;
@@ -76,6 +76,8 @@ h2 {
     color: #fff;
     font-size: 16px;
     font-weight: normal; }
+  .header_nav li:hover {
+    color: #10a410; }
 
 .nav_button {
   float: right;
@@ -103,7 +105,7 @@ h2 {
 
 /* Skills Child */
 .skills h2 {
-  margin: 40px 0 20px 0; }
+  margin: 20px 0 20px 0; }
 .skills_wrap {
   text-align: center; }
   .skills_wrap img {
@@ -119,16 +121,78 @@ h2 {
     text-transform: uppercase; }
 
 /* Slider */
-.slider h2 {
-  margin-top: 60px;
-  font-weight: 200; }
+/* Photo gallery */
+.photo_gallery_wrap {
+  margin-top: 25px; }
+.photo_gallery_overflow {
+  overflow: hidden;
+  padding: 0 8px; }
 
-.single_item {
-  background: url(../img/photo_slider.jpg) no-repeat center center;
-  background-size: cover;
-  min-height: 800px; }
+/* Tabs */
+.tabs {
+  background: #efefef; }
+  .tabs h2 {
+    padding: 20px 0 40px 0; }
 
-.single_item1 {
-  background: url(../img/bg_header.jpg) no-repeat center center;
-  background-size: cover;
-  min-height: 800px; }
+.tabs__content {
+  display: none; }
+
+.tabs__content.active {
+  display: block; }
+
+.tabs__caption {
+  padding-left: 0;
+  text-align: center;
+  margin-bottom: 55px; }
+  .tabs__caption li {
+    margin: 0 5px;
+    padding: 20px 40px;
+    background: #fff;
+    border-radius: 5px;
+    color: #626262;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer; }
+  .tabs__caption .active {
+    background: #10a410;
+    color: #fff; }
+
+.tabs__content_wrap {
+  padding: 0;
+  max-width: 32%;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 5px; }
+  .tabs__content_wrap img {
+    overflow: hidden; }
+  .tabs__content_wrap h3 {
+    color: #626262;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    text-transform: uppercase; }
+  .tabs__content_wrap span {
+    padding: 0;
+    margin: 0 20px;
+    display: block;
+    color: #10a410;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 30px; }
+  .tabs__content_wrap a {
+    font-size: 16px;
+    color: #626262; }
+
+.tabs_btn {
+  text-align: center;
+  margin: 20px auto; }
+  .tabs_btn button {
+    margin-bottom: 20px;
+    padding: 20px 125px;
+    border: none;
+    border-radius: 5px;
+    background: #10a410;
+    color: #fff;
+    font-size: 20px; }
+    .tabs_btn button:hover {
+      background: #0e940e; }
