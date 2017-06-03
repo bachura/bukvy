@@ -3,8 +3,6 @@
 
 
 $main-color: #10a410
-$dark-color: #000
-$light-color: #fff
 
 //Убрать стрелки у формы телефона
 input::-webkit-outer-spin-button,
@@ -39,7 +37,8 @@ input,
 		outline: none
 li
 	list-style-type: none
-section
+section, 
+footer
 	width: 100%
 	height: auto
 	display: block
@@ -51,7 +50,7 @@ h1
 h2
 	margin: 0
 	font-size: 30px
-	color: $dark-color
+	color: #000
 	text-align: center
 	text-transform: uppercase
 .btn
@@ -59,7 +58,7 @@ h2
 	border: none
 	border-radius: 5px
 	padding: 10px 25px
-	color: $light-color
+	color: #fff
 
 
 .main_head
@@ -77,7 +76,7 @@ h2
 		display: inline-block
 		padding: 15px
 		a
-			color: $light-color
+			color: #fff
 			font-size: 16px
 			font-weight: normal
 		&:hover
@@ -91,14 +90,14 @@ h2
 		margin-top: 118px
 		font-weight: 800
 		font-size: 55px
-		color: $light-color
+		color: #fff
 		text-transform: uppercase
 	p
 		margin-top: 10px
 		line-height: 1.1
 		font-weight: normal
 		font-size: 40px
-		color: $light-color
+		color: #fff
 .header_button
 	font-size: 20px
 	margin-top: 33px
@@ -120,7 +119,7 @@ h2
 			padding-top: 20px
 			margin-bottom: 20px
 			font-size: 16px
-			color: $dark-color
+			color: #000
 			text-transform: uppercase
 
 /* Slider */ 
@@ -170,13 +169,15 @@ h2
 		background: $main-color
 		color: #fff
 .tabs__content
+	margin-bottom: 40px
 	&_wrap
 		padding: 0
-		max-width: 32%
-		margin: 0 5px
+		max-width: 31%
+		margin: 0 10px
 		overflow: hidden
 		background: #fff
 		border-radius: 5px
+		box-shadow: 0px 6px 8px 5px rgba(172,172,172,0.8)
 		img
 			overflow: hidden
 		h3
@@ -209,5 +210,134 @@ h2
 		&:hover
 			background: $main-color * 0.9
 
+/* Help block */
+.help_block
+	background: $main-color
+	h2
+		padding-bottom: 20px
+		font-weight: normal
+		font-size: 36px
+		color: #fff
+		text-transform: uppercase
+	p
+		text-align: center
+		font-weight: normal
+		font-size: 21px
+		color: #fff
+	form
+		text-align: center
+	input
+		text-align: center
+		border: none
+		border-radius: 25px
+		padding: 15px 30px
+		margin: 20px 10px
+		&::placeholder
+			color: #000
+.btn_gradient
+	border: none
+	border-radius: 25px
+	padding: 15px 40px
+	background: rgba(234,255,0,1)
+	background: linear-gradient(to right, rgba(234,255,0,1) 0%, rgba(132,255,0,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaff00', endColorstr='#84ff00', GradientType=1 )
+	&:hover
+		background: rgba(234,255,0,1) * 0.9
+.btn_form
+	margin-left: 10px
 
+/* Why we */
+.why_we
+	h2
+		margin-bottom: 40px
+	&_wrap
+		margin-bottom: 60px
+		h3
+			text-align: center
+			margin: 0
+			padding: 0
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 24px
+			text-transform: uppercase
+			color: #000
+		p
+			margin-top: 30px
+			font-size: 22px
+			line-height: 1.2
+
+/* Present */
+.present
+	background: url(../img/bg_present.jpg) no-repeat center center
+	background-size: cover
+	&_wrap_img
+		text-align: center
+	&_wrap_info
+		margin-top: 30px
+		background: #fff
+		h3
+			margin: 50px
+			margin-bottom: 30px
+			text-align: center
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 24px
+			color: #000
+			text-transform: uppercase
+			span
+				color: $main-color
+		p
+			font-size: 22px
+			margin-bottom: 30px
+	&_btn_wrap
+		text-align: center
+		button
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 22px
+			margin-bottom: 50px
+
+/* We works */
+.we_works
+	h2
+		margin-bottom: 40px
+	&_wrap
+		text-align: center
+		p
+			margin-top: 20px
+			font-size: 18px
+
+
+/* Footer */
+.contacts
+	background: url(../img/bg_footer.jpg) no-repeat center center
+	background-size: cover
+	h2
+		margin-bottom: 40px
+	&_wrap
+		background: #fff
+		h3
+			color: #000
+			font-weight: normal
+			font-size: 18px
+		&_phone
+			margin-bottom: 10px
+			img
+				float: left
+			p
+				font-size: 18px
+				padding-left: 10px
+.phone_1
+	margin: 4px 20px 0 0
+.phone_2
+	margin: 4px 8px 0 0
+.phone_3
+	margin: 4px 19px 0 0
+.timetable
+	margin-top: 40px
+	font-size: 18px
+.adress
+	margin: 20px 0
+	font-size: 18px
+.socials
+	h3
+		margin: 18px 0
+		font-size: 18px
 
