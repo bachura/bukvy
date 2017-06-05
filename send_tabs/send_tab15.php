@@ -18,7 +18,7 @@ $email = trim($email);
 
 if (mail("chudo.azbuka@gmail.com", "Чудо азбука - Покупка набора 'Арифметика'", "Имя: ".$name. "\nТелефон ".$phone. "\nE-mail: ".$email, "From: chudo.azbuka@gmail.com \r\n"))
 	{	echo "Сообщение отправлено, все хорошо!";  
-		header("Location: ./index.html");
+		header("Location: ../index.html");
 	} else { 
 		echo "при отправке сообщения возникли ошибки";
 	}

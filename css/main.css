@@ -77,8 +77,9 @@ h2 {
   padding: 15px; }
   .header_nav li a {
     color: #fff;
-    font-size: 16px;
-    font-weight: normal; }
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase; }
   .header_nav li:hover {
     color: #10a410; }
 
@@ -102,13 +103,15 @@ nav {
 
 .nav_button {
   float: right;
-  margin-top: 18px;
+  margin-top: 20px;
   padding: 15px 40px;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 12px;
   text-transform: uppercase; }
 
 .header_info h1 {
   letter-spacing: 2.25px;
-  margin-top: 118px;
+  margin-top: 188px;
   font-weight: 800;
   font-size: 55px;
   color: #fff;
@@ -224,6 +227,8 @@ nav {
     font-size: 20px; }
     .tabs_btn button:hover {
       background: #0e940e; }
+  .tabs_btn a {
+    padding: 20px 150px; }
 
 /* Help block */
 .help_block {
@@ -383,13 +388,16 @@ nav {
     font-size: 22px;
     padding: 8px 34px; }
 
+.footer_wrap_btn {
+  text-align: center; }
+
 #modal_close {
   position: absolute;
   right: 30px;
   top: 15px;
   width: 25px;
   height: 25px;
-  z-index: 10;
+  z-index: 10000;
   cursor: pointer; }
   #modal_close:before, #modal_close:after {
     position: absolute;
@@ -427,11 +435,21 @@ nav {
     font-size: 13px;
     color: #fff; }
 
+.mymagicoverbox_fenetre_more_product {
+  width: 1200px;
+  left: -600px;
+  z-index: 9998;
+  background: url(../img/bg_popup.jpg) no-repeat;
+  background-size: cover; }
+
 .mymagicoverbox_fenetreinterieur {
-  height: 400px;
+  height: 750px;
   text-align: center;
   overflow: auto;
   margin-top: 10px; }
+
+.mymagicoverbox_fenetreinterieur_more_product {
+  height: 550px; }
 
 #myfond_gris {
   display: none;
@@ -489,3 +507,30 @@ nav {
   border-radius: 6px; }
   .btn_popup_form:hover {
     background: #0e940e; }
+
+.more_product_img {
+  margin-top: 30px; }
+
+.more_product_info {
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 30px; }
+  .more_product_info h2 {
+    font-size: 22px;
+    text-align: left; }
+  .more_product_info span {
+    display: block;
+    text-align: left;
+    color: #10a410;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 22px;
+    padding: 0 0 20px 20px; }
+  .more_product_info p {
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+    padding-left: 20px; }
+
+.more_products_btn {
+  padding: 15px 50px;
+  margin: 20px 0 20px 20px;
+  float: left; }
