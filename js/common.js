@@ -32,14 +32,13 @@ $(document).ready(function() {
 	});
 
 	// header slider
-/*	$('.slider').slick({
+	$('.slider').slick({
 		arrows: true,
-	  dots: true,
 	  infinite: true,
 	  autoplay: true,
 	  autoplaySpeed: 6000,
 	  speed: 500
-	});*/
+	});
 	
 	// Tabs
 	$(function() {
@@ -53,7 +52,7 @@ $(document).ready(function() {
 	});
 
 	// Scroll to id
-	$("a[href*='#']").mPageScroll2id();
+	$("a[href='#']").mPageScroll2id();
 
 	// Pop_up form
 	$(".mymagicoverbox").click(function()
@@ -72,21 +71,68 @@ $(document).ready(function() {
 				$('#'+iddiv).fadeOut(300);
 	});
 
+
+/*$(".mymagicoverbox").magnificPopup({
+type:"inline",
+midClick: true,
+callbacks: {
+    open: function() {
+    	$('.slider-for').slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  arrows: false,
+			  fade: true,
+			  asNavFor: '.slider-nav'
+			});
+			$('.slider-nav').slick({
+			  slidesToShow: 3,
+			  slidesToScroll: 1,
+			  asNavFor: '.slider-for',
+			  dots: true,
+			  centerMode: true,
+			  focusOnSelect: true
+			});
+    }
+}
+});
+*/
+
 	// Popup slider
 	$('.slider-for').slick({
+		autoplay: true,
+	  autoplaySpeed: 6000,
+	  speed: 500,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  arrows: false,
-	  fade: true,
+	  fade: false,
 	  asNavFor: '.slider-nav'
 	});
 	$('.slider-nav').slick({
+		autoplay: true,
+	  autoplaySpeed: 6500,
+	  speed: 500,
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
 	  asNavFor: '.slider-for',
-	  dots: true,
+	  arrows: false,
 	  centerMode: true,
 	  focusOnSelect: true
+	});
+
+	/* Humburger menu */
+	$(document).delegate('.open', 'click', function(event){
+	$(this).addClass('oppenned');
+		event.stopPropagation();
+	});
+	
+	$(document).delegate('body', 'click', function(event) {
+		$('.open').removeClass('oppenned');
+	});
+	
+	$(document).delegate('.oppenned', 'click', function(event){
+		$('.open').removeClass('oppenned');
+		event.stopPropagation();
 	});
 
 }); 
